@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import 'antd/dist/antd.css';
+import {Descriptions} from 'antd';
 
 function TopDetails() {
 
     const style = {
         details: {
             display: "inline-block",
-            margin: '5px 15px 5px 0px'
+            margin: '5px 50px 5px 0px'
         },
         pstyle: {
             margin: "0"
@@ -17,12 +19,19 @@ function TopDetails() {
 
     return (
         <>
-            <p style={{ ...style.pstyle, ...style.boldtext}}>Title</p>
-            <p style={style.pstyle}>Name</p>
+            {/* <Descriptions title="User Profile" >
+                <Descriptions.Item label="Email">this@that.com</Descriptions.Item>
+                <Descriptions.Item label="Phone">555-555-1234</Descriptions.Item>
+                <Descriptions.Item label="Last Login">Never</Descriptions.Item>
+                <Descriptions.Item label="Login Count">0</Descriptions.Item>
+            </Descriptions> */}
+
+            <p style={{ ...style.pstyle, ...style.boldtext}}>Investor</p>
+            <p style={style.pstyle}>Jim Jones</p>
 
             <div style={style.details}>
                 <p style={{ ...style.pstyle, ...style.boldtext}}>Email</p>
-                <p style={style.pstyle}>Email Address</p>
+                <p style={style.pstyle}>jim.jones@yahoo.com</p>
             </div>
 
             <div style={style.details}>

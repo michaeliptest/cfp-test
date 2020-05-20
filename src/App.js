@@ -1,7 +1,8 @@
 import React from 'react';
-import TopDetails from './components/TopDetails'
-import InputForm from './components/InputForm'
-import TopMenu from './components/TopMenu'
+import TopDetails from './components/TopDetails';
+import InputForm from './components/InputForm';
+import TopMenu from './components/TopMenu';
+import Profiles from './components/Profiles';
 
 function App() {
   const style = {
@@ -14,6 +15,7 @@ function App() {
       <TopDetails />
       <TopMenu />
       <InputForm/>
+      {/* <Profiles/> */}
     </div>
   );
 }
