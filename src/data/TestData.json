@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "Title": "Mr.",
+            "FirstName": "Michael",
+            "MI": "J",
+            "LastName": "Jordan",
+            "Suffix": null,
+            "Email": "michael@jordan.com",
+            "Password": "mj23",
+            "DateOfBirth": "24-Jan-1971",
+            "SSN": "123-45-6789",
+            "InvestmentAmount": "400000",
+            "Profiles" : ["MJ Investments", "Jordan 23 LLC"]
+        },
+        {
+            "Title": "Mr.",
+            "FirstName": "Dan",
+            "MI": "J",
+            "LastName": "Clark",
+            "Suffix": "PhD.",
+            "Email": "dan@clark.com",
+            "Password": "dc123",
+            "DateOfBirth": "4-July-1980",
+            "SSN": "123-45-6789",
+            "InvestmentAmount": "100000",
+            "Profiles" : ["DC Hedge", "Philly Stakes"]
+        }
+    ]
+}

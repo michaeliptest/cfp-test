@@ -5,12 +5,16 @@ import {Row, Col} from 'antd';
 function TopMenu () {
     const style = {
         spanstyle: {
-            backgroundColor: "lightBlue",
+            backgroundColor: "white",
             display: "block",
             padding: "10px",
             marginBottom: "4px",
             textAlign: "center",
-            borderBottom: "0"
+            borderTop: "1px solid lightGray",
+            borderBottom: "1px solid lightGray"
+        },
+        topdiv: {
+            margin: "25px 0 0 0"
         }
     }
 
@@ -19,11 +23,11 @@ function TopMenu () {
     }
 
     const mouseOutBorder = (e) => {
-        e.target.style.borderBottom="0"
+        e.target.style.borderBottom="1px solid lightGray"
     }
 
     return (
-        <>
+        <div style={style.topdiv}>
             <Row>
                 <Col span={4} style={style.spanstyle} onMouseOver={mouseOverBorder} onMouseOut={mouseOutBorder}>Profile</Col>
                 <Col span={4} style={style.spanstyle} onMouseOver={mouseOverBorder} onMouseOut={mouseOutBorder}>Investments</Col>
@@ -32,7 +36,7 @@ function TopMenu () {
                 <Col span={4} style={style.spanstyle} onMouseOver={mouseOverBorder} onMouseOut={mouseOutBorder}>Bank Accounts</Col>
                 <Col span={4} style={style.spanstyle} onMouseOver={mouseOverBorder} onMouseOut={mouseOutBorder}>Connections</Col>
             </Row>
-        </>
+        </div>
     )
 }
 

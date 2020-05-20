@@ -12,10 +12,10 @@ function App() {
   }
   return (
     <div style={style.divstyle}>
+      {/* <Profiles/> */}
       <TopDetails />
       <TopMenu />
       <InputForm/>
-      {/* <Profiles/> */}
     </div>
   );
 }

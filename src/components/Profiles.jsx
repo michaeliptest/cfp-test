@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Tree } from 'antd';
+import TestData from '../data/TestData.json'
 
 const profileNames = [
     {
@@ -45,12 +46,37 @@ const profileNames = [
         key: '5'
     }];
 
+// let testData = TestData;
+
+const style = {
+    titlefont: {
+        fontFamily: 'Helvetica',
+        fontWeight: 'bold',
+        fontSize: '16px'
+    }
+}
+
+const nodeClick = (e) => {
+    console.log(`Navigates to user page of ${e}`)
+}
+
+const dropItem = (e) => {
+    console.log(e)
+// append to dropped position
+
+}
+
 function Profiles() {
     return (
         <>
             <Tree
+                draggable
                 treeData={profileNames}
+                style={style.titlefont}
+                onSelect={nodeClick}
+                onDrop={dropItem}
             />
+            {/* <h1>{testData.data[0].FirstName}</h1> */}
         </>
     )
 }

@@ -14,6 +14,10 @@ function TopDetails() {
         },
         boldtext: {
             fontWeight: "bold"
+        },
+        titlefont: {
+            fontFamily: 'Helvetica',
+            fontSize: '16px'
         }
     }
 
@@ -26,27 +30,27 @@ function TopDetails() {
                 <Descriptions.Item label="Login Count">0</Descriptions.Item>
             </Descriptions> */}
 
-            <p style={{ ...style.pstyle, ...style.boldtext}}>Investor</p>
-            <p style={style.pstyle}>Jim Jones</p>
+            <p style={{ ...style.pstyle, ...style.boldtext,...style.titlefont}}>Investor</p>
+            <p style={{...style.pstyle, ...style.titlefont}}>Jim Jones</p>
 
             <div style={style.details}>
-                <p style={{ ...style.pstyle, ...style.boldtext}}>Email</p>
-                <p style={style.pstyle}>jim.jones@yahoo.com</p>
+                <p style={{ ...style.pstyle, ...style.boldtext,...style.titlefont}}>Email</p>
+                <p style={{...style.pstyle, ...style.titlefont}}>jim.jones@yahoo.com</p>
             </div>
 
             <div style={style.details}>
-                <p style={{ ...style.pstyle, ...style.boldtext}}>Phone</p>
-                <p style={style.pstyle}>123-456-7890</p>
+                <p style={{ ...style.pstyle, ...style.boldtext,...style.titlefont}}>Phone</p>
+                <p style={{...style.pstyle, ...style.titlefont}}>123-456-7890</p>
             </div>
 
             <div style={style.details}>
-                <p style={{ ...style.pstyle, ...style.boldtext}}>Last Login</p>
-                <p style={style.pstyle}>Never</p>
+                <p style={{ ...style.pstyle, ...style.boldtext,...style.titlefont}}>Last Login</p>
+                <p style={{...style.pstyle, ...style.titlefont}}>Never</p>
             </div>
 
             <div style={style.details}>
-                <p style={{ ...style.pstyle, ...style.boldtext}}>Login Count</p>
-                <p style={style.pstyle}>0</p>
+                <p style={{ ...style.pstyle, ...style.boldtext,...style.titlefont}}>Login Count</p>
+                <p style={{...style.pstyle, ...style.titlefont}}>0</p>
             </div>
         </>
     )
