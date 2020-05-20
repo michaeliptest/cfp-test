@@ -62,26 +62,26 @@ function InputForm() {
     return (
         <div style={style.topdiv}>
             <div>
-                <p style={{...style.titles, ...style.titlefont, width: '5%', margin: '0'}}>Title</p>
-                <p style={{...style.titles, ...style.titlefont, width: '20%', margin: '0 3px'}}>First Name</p>
-                <p style={{...style.titles, ...style.titlefont, width: '4%', margin: '0 3px'}}>MI</p>
-                <p style={{...style.titles, ...style.titlefont, width: '20%', margin: '0 3px'}}>Last Name</p>
-                <p style={{...style.titles, ...style.titlefont, width: '20%', margin: '0 3px'}}>Suffix</p>
+                <p style={{...style.titles, ...style.titlefont, width: '6%', margin: '0 10px 0 0'}}>Title</p>
+                <p style={{...style.titles, ...style.titlefont, width: '20%', margin: '0 10px'}}>First Name</p>
+                <p style={{...style.titles, ...style.titlefont, width: '4%', margin: '0 10px'}}>MI</p>
+                <p style={{...style.titles, ...style.titlefont, width: '20%', margin: '0 10px'}}>Last Name</p>
+                <p style={{...style.titles, ...style.titlefont, width: '6%', margin: '0 10px'}}>Suffix</p>
             </div>
             <Input.Group compact>
-                <Select defaultValue="" style={{ width: "5%" }} name="title-value" onChange={titleChange} size="large">
+                <Select defaultValue="" style={{ width: "6%", margin: '0 10px 0 0' }} name="title-value" onChange={titleChange} size="large">
                     <Option value=""></Option>
                     <Option value="Dr.">Dr.</Option>
                     <Option value="Mr.">Mr.</Option>
                     <Option value="Mrs.">Mrs.</Option>
                     <Option value="Ms.">Ms.</Option>
                 </Select>
-                <Input style={{ width: '20%', margin: '0 3px' }} size="large" placeholder="First Name" name="first-name-value" onChange={userInputChange}/>
+                <Input style={{ width: '20%', margin: '0 10px' }} size="large" placeholder="First Name" name="first-name-value" onChange={userInputChange}/>
  
-                <Input style={{ width: '4%', margin: '0 3px' }} size="large" placeholder="MI" name="mi-value" onChange={userInputChange}/>
+                <Input style={{ width: '4%', margin: '0 10px' }} size="large" placeholder="MI" name="mi-value" onChange={userInputChange}/>
 
-                <Input style={{ width: '20%', margin: '0 3px' }} size="large" placeholder="Last Name" name="last-name-value" onChange={userInputChange}/>
-                <Select defaultValue="" style={{ width: "5%" }} onChange={suffixChange} size="large">
+                <Input style={{ width: '20%', margin: '0 10px' }} size="large" placeholder="Last Name" name="last-name-value" onChange={userInputChange}/>
+                <Select defaultValue="" style={{ width: "6%", margin: '0 0 0 10px' }} onChange={suffixChange} size="large">
                     <Option value=""></Option>
                     <Option value="Jr.">Jr.</Option>
                     <Option value="Md.">Md.</Option>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom'
 import TopDetails from './components/TopDetails';
 import InputForm from './components/InputForm';
 import TopMenu from './components/TopMenu';
@@ -13,9 +14,17 @@ function App() {
   return (
     <div style={style.divstyle}>
       {/* <Profiles/> */}
-      <TopDetails />
+      {/* <TopDetails />
       <TopMenu />
-      <InputForm/>
+      <InputForm/> */}
+      <Route exact path='/profile' render={props =>
+        <div>
+          <TopDetails />
+          <TopMenu />
+          <InputForm />
+        </div>
+      } />
+      <Route exact path='/' component={Profiles}/>
     </div>
   );
 }
