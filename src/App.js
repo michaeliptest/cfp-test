@@ -4,6 +4,7 @@ import TopDetails from './components/TopDetails';
 import InputForm from './components/InputForm';
 import TopMenu from './components/TopMenu';
 import Profiles from './components/Profiles';
+import Test from './components/Test';
 
 function App() {
   const style = {
@@ -17,11 +18,13 @@ function App() {
       {/* <TopDetails />
       <TopMenu />
       <InputForm/> */}
+      {/* <Test /> */}
       <Route exact path='/profile' render={props =>
         <div>
           <TopDetails />
           <TopMenu />
           <InputForm />
+          
         </div>
       } />
       <Route exact path='/' component={Profiles}/>
